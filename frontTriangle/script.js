@@ -77,15 +77,11 @@ const Triangle = async (size) => {
       console.log(error);
     }
   } else {
-    alert("El numero debe ser impar\nNumber must be pair");
+    alert("El numero debe ser impar\nNumber must be odd");
   }
 };
 let Par = (num) => {
   //Verifica si es impar
   //check if is not a pair number
-  if (num % 2 != 0) {
-    return true;
-  } else {
-    return false;
-  }
+  return num % 2 != 0 ? true : false; //aclarado por mauriam
 };
