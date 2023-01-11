@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
+    <title>Front Triangle</title>
+</head>
+
+<body>
+    <div>
+        <form action="">
+            <p><b>Language</b>
+                <input type="radio" value="spanish" checked name="medio" onclick="language(this.value)">Español
+                <input type="radio" value="english" name="medio" onclick="language(this.value)">English
+        </form>
+    </div>
+    <form id="form">
+        <div align="center">
+            <div>
+                API Dibuja el Triangulo
+            </div>
+            <table>
+                <tr>
+                    <td size="20"><span>Tamaño de la base</span>
+
+                    </td>
+                    <td>
+                        <input type="text" name="size" size="1" maxlength="2">
+                    </td>
+                </tr>
+            </table>
+            <button align="center" type='button' onclick=Triangle(form.size.value)>Submit</button>
+    </form>
+    </div>
+
+    <div id="Result" align="center">
+
+    </div>
+</body>
+
+</html>
